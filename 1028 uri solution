@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main()
+{
+    int a=0,b,f1,f2,n,i;
+    scanf("%d",&n);
+    for(i=0;i<=n;i++)
+    {
+        scanf("%d %d",&f1,&f2);
+        a=f1%f2;
+        if (a!=0)
+        {
+            f1=f2;
+            f2=f1;
+        }
+        printf("%d",a);
+    }
+
+}
