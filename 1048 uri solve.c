@@ -30,7 +30,7 @@ int main()
   }
   else if (s>=1200.01&&s<=2000)
   {
-      a=s+(s*1.7);
+      a=s+(s*1.07);
       z=a-s;
       printf("Novo salario: %.2lf\n",a);
       printf("Reajuste ganho: %.2lf\n",z);
@@ -38,7 +38,7 @@ int main()
   }
   else if (s>2000.01)
   {
-      a=s+(s*1.4);
+      a=s+(s*1.04);
       z=a-s;
       printf("Novo salario: %.2lf\n",a);
       printf("Reajuste ganho: %.2lf\n",z);
