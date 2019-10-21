@@ -1,0 +1,38 @@
+#include <stdio.h>
+int main()
+{
+   int k,n,m,x,y,i;
+
+   while(scanf("%d",&k))
+   {
+       if (k==0)
+        break;
+ scanf("%d %d",&x,&y);
+   for(i=0;i<k;i++)
+   {
+       scanf("%d %d",&n,&m);
+       if(n==x||m==y)
+       {
+           printf("divisa\n");
+       }
+       else if(n<x&&m<y)
+       {
+           printf("SO\n");
+       }
+       else if(n>x&&m<y)
+       {
+           printf("SE\n");
+       }
+       else if(n<x&&m>y)
+       {
+           printf("NO\n");
+       }
+       else if(n>x&&m>y)
+       {
+           printf("NE\n");
+       }
+
+   }
+   }
+
+}
